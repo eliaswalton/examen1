@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const MenuPrincipal(),
-        '/noticias': (context) => const Noticias(),
+        '/noticias': (context) => Noticias(),
         '/tareas': (context) => const ListaTareas(),
         '/moneda': (context) => const CambioMoneda(),
         '/podcast': (context) => const Podcast()
