@@ -9,6 +9,9 @@ class MenuPrincipal extends StatelessWidget {
       appBar: AppBar(
         title: const Text('CEUTEC App'),
       ),
+      body: const Center(
+        child: Text("Pagina principal"),
+      ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -40,22 +43,22 @@ class MenuPrincipal extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.article),
+              leading: const Icon(Icons.task),
               title: const Text('Tareas'),
               onTap: () {
                 Navigator.pushNamed(context, '/tareas');
               },
             ),
             ListTile(
-              leading: const Icon(Icons.article),
+              leading: const Icon(Icons.money_sharp),
               title: const Text('Cambio de moneda'),
               onTap: () {
                 Navigator.pushNamed(context, '/moneda');
               },
             ),
             ListTile(
-              leading: const Icon(Icons.article),
-              title: const Text('Podcast'),
+              leading: const Icon(Icons.play_arrow),
+              title: const Text('Reproductor'),
               onTap: () {
                 Navigator.pushNamed(context, '/podcast');
               },
